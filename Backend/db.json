@@ -1,0 +1,54 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Xiami POCO X3",
+      "price": 1750.99
+    },
+    {
+      "id": 2,
+      "name": "Notebook gamer",
+      "price": 5600
+    },
+    {
+      "id": 3,
+      "name": "Garrafa térmica",
+      "price": 37.99
+    }
+  ],
+  "clients": [
+    {
+      "name": "Daniel Borba",
+      "email": "daniel.costa@estudante.iftm.edu.br",
+      "age": "Entre 18 e 49 anos",
+      "gender": "Masculino",
+      "id": 1
+    },
+    {
+      "name": "John Doe",
+      "email": "john_doe@terra.com.br",
+      "age": "Acima de 50 anos",
+      "gender": "Masculino",
+      "id": 2
+    }
+  ],
+  "prod-cli": [
+    {
+      "id": 1,
+      "idClient": 1,
+      "idProduct": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 2,
+      "idClient": 2,
+      "idProduct": [
+        3,
+        4
+      ]
+    }
+  ]
+}

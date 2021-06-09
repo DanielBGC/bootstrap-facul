@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="clientes.css">
+</head>
+<body>
+    <div class="container">
+        <button class="btn btn-primary" id="showProducts">
+            Mostrar produtos
+        </button>
+        <div id="modal">
+            <form>
+                <div class="adicionar row">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="">Clientes</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Adicionar</li>
+                        </ol>
+                    </nav>
+                    <div class="input-group row">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" class="col-4" placeholder="Nome">
+                    </div>
+
+                    <div class="input-group row">
+                        <label for="email" class="">Email</label>
+                        <input type="email" name="email" id="email" class="col-4" min=0 placeholder="Email">
+                    </div>
+                    
+                    <button class="btn btn-info col-4" id="addProd">
+                        Adicionar
+                    </button>
+                </div>
+
+                <div class="remover row">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="">Clientes</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Remover</li>
+                        </ol>
+                    </nav>
+                    <div class="input-group row">
+                        <label for="id">ID</label>
+                        <input type="number" name="id" min=0 class="col-4" id="id" placeholder="ID a ser deletado">
+                    </div>
+                    <button id="removeProd" class="col-4 btn btn-danger">
+                        Deletar
+                    </button>
+                </div>
+
+                <div class="row">
+                    <button id="voltar" class="col-4 btn btn-warning">
+                        Voltar
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Clientes</li>
+            </ol>
+        </nav>
+        <div class="header">
+            <h1 class="row">Clientes</h1>
+            <p class="row" id="user-name"> </p>
+        </div>
+        <div class="acoes">
+            <!-- <button id="adicionar" class="btn btn-primary">
+                Adicionar
+            </button> -->
+            <button id="remover" class="btn btn-danger">
+                Remover
+            </button>
+        </div>
+        <table class="table table-bordered">
+            <thead></thead>
+            <tbody></tbody>
+          </table>
+    </div>
+    <script src="clientes.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+html, body {
+    height: 100%;
+    background-color: #1B64DB;
+    color: #fff;
+}
+
+button#showClients {
+    position: absolute;
+    right: 0;
+}
+
+.container nav ol.breadcrumb li,
+.container nav ol.breadcrumb a,
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #fff;
+}
+
+.container div.header {
+    margin-bottom: 4rem;
+}
+
+p#user-name {
+    line-height: 4;
+}
+
+#modal {
+    background-color: #1B64DB;
+
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+
+    padding: 20px;
+
+    display: none;
+}
+
+#modal nav {
+    margin-bottom: 4rem;
+}
+
+#modal strong {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+#modal .input-group {
+    margin-bottom: 2rem;
+}
+
+#modal input[type=text], 
+#modal input[type=number] {
+    padding: 9px 20px;
+    text-align: left;
+    border: 0;
+    outline: 0;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    color: #504f4f;
+    transition: all 0.3s ease;
+    margin-top: 5px;
+}
+
+#modal button {
+    font-weight: 700;
+}
+
+
+.input-group label {
+    font-weight: 700;
+    color: white;
+}
+
+button#adicionar {
+    font-weight: 700;
+    /* border-color: #fff; */
+}
+
+table {
+    margin-top: 20px;
+}
+
+table thead,
+table tbody {
+    color: #fff;
+}
+
+
+table tbody:last-child td:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+table tbody tr button {
+    border: none;
+    outline: none;
+    color: red;
+    font-weight: 700;
+    background-color: #1B64DB;
+
+}
+
+button#voltar {
+    margin-top: 1rem;
+}
