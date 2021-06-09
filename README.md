@@ -44,6 +44,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [Node.js](https://nodejs.org/en/)
 - [JavaScript](https://www.javascript.com/)
+- [Bootstrap](https://getbootstrap.com/)
 
 
 ### Licença
